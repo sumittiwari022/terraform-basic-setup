@@ -5,7 +5,6 @@
 
 Copy the files to local machine and execute below commands.
 
-
 terraform init
 terraform plan
 terraform apply
