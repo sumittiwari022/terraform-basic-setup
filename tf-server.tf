@@ -59,7 +59,7 @@ resource "aws_security_group" "tf-sg" {
   }
 }
 data "template_file" "user_data" {
-  template = file("${path.module}/user_data.sh")
+  template = file("${user_data.sh")
 }
 
 resource "aws_instance" "ec2_instance" {

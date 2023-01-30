@@ -2,6 +2,12 @@
 
 [![Lint Status](https://github.com/tothenew/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/tothenew/terraform-aws-template/actions)
 [![LICENSE](https://img.shields.io/github/license/tothenew/terraform-aws-template)](https://github.com/tothenew/terraform-aws-template/blob/master/LICENSE)
+This terraform script creates:
+1. VPC
+2. 3 Public Subnet
+3. 3 Private Subnet
+4. 3 secure/db Subnets
+5. Ec2 server with docker engine and make package installed. 
 
 Copy the files to local machine and execute below commands.
 
