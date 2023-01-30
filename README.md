@@ -10,10 +10,11 @@ This terraform script creates:
 5. Ec2 server with docker engine and make package installed. 
 
 Copy the files to local machine and execute below commands.
-
+```
 terraform init
 terraform plan
 terraform apply
+```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
