@@ -1,4 +1,4 @@
-# terraform-aws-template
+# terraform-basic-setup
 
 [![Lint Status](https://github.com/tothenew/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/tothenew/terraform-aws-template/actions)
 [![LICENSE](https://img.shields.io/github/license/tothenew/terraform-aws-template)](https://github.com/tothenew/terraform-aws-template/blob/master/LICENSE)
@@ -57,10 +57,10 @@ No inputs.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_private_subnet"></a> [private\_subnet](#output\_private\_subnet) | n/a |
-| <a name="output_public_subnet"></a> [public\_subnet](#output\_public\_subnet) | n/a |
-| <a name="output_secure_db_subnet"></a> [secure\_db\_subnet](#output\_secure\_db\_subnet) | n/a |
-| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | n/a |
+| <a name="output_private_subnet"></a> [private\_subnet](#output\_private\_subnet) | Value of name tags of private subnets |
+| <a name="output_public_subnet"></a> [public\_subnet](#output\_public\_subnet) | Value of name tags of public subnets |
+| <a name="output_secure_db_subnet"></a> [secure\_db\_subnet](#output\_secure\_db\_subnet) | Value of name tags of secure db subnets |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The id of the created vpc |
 <!-- END_TF_DOCS -->
 
 ## Authors
