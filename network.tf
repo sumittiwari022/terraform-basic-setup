@@ -1,14 +1,6 @@
 module "network" {
-  source = "git::https://github.com/DNXLabs/terraform-aws-network.git?ref=1.8.5"
-
-  newbits             = 4
-  vpc_cidr            = "10.0.0.0/16"
-  name                = "vpc-common"
-  multi_nat           = false
-  transit_subnet      = false
-
-  tags = {
-    "CreatedBy" = "Terraform"
-  }
+  source      = "git::https://github.com/tothenew/terraform-aws-vpc.git?ref=v0.1.0"
+  cidr_block  = "10.1.0.0/16"
+  subnet_bits = 8
 }
 
