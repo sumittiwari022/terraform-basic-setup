@@ -7,7 +7,8 @@
 2. 3 Public Subnet
 3. 3 Private Subnet
 4. 3 secure/db Subnets
-5. Ubuntu based Ec2 server with docker engine and make package installed. 
+5. EC2 server with Docker engine and make package installed,IAM policy with SSM and Administrator permissions
+6. Default IAM policies required for Terraform provisioning.
 
 Copy the files to local machine and execute below commands.
 ```
