@@ -30,38 +30,34 @@ terraform apply
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 4.52.0 |
-| <a name="provider_template"></a> [template](#provider\_template) | n/a |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_network"></a> [network](#module\_network) | git::https://github.com/DNXLabs/terraform-aws-network.git | 1.8.5 |
+| <a name="module_network"></a> [network](#module\_network) | git::https://github.com/tothenew/terraform-aws-vpc.git | v0.2.0 |
+| <a name="module_terraform_ec2_agent"></a> [terraform\_ec2\_agent](#module\_terraform\_ec2\_agent) | git::https://github.com/tothenew/terraform-aws-agent.git | v0.0.1 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_iam_instance_profile.terraform_iam_profile](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/resources/iam_instance_profile) | resource |
-| [aws_iam_role.terraform_admin_role](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/resources/iam_role) | resource |
-| [aws_iam_role_policy_attachment.terraform_ec2_policy](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/resources/iam_role_policy_attachment) | resource |
-| [aws_instance.ec2_instance](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/resources/instance) | resource |
-| [aws_security_group.tf-sg](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/resources/security_group) | resource |
-| [aws_ami.ubuntu](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/data-sources/ami) | data source |
-| [template_file.user_data](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
+| [aws_subnets.private](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/data-sources/subnets) | data source |
+| [aws_subnets.public](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/data-sources/subnets) | data source |
+| [aws_subnets.secure](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/data-sources/subnets) | data source |
+| [aws_vpc.selected](https://registry.terraform.io/providers/hashicorp/aws/4.52.0/docs/data-sources/vpc) | data source |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | The VPC Subnet IDs to launch in | `string` | `"nonprod"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_private_subnet"></a> [private\_subnet](#output\_private\_subnet) | Value of name tags of private subnets |
-| <a name="output_public_subnet"></a> [public\_subnet](#output\_public\_subnet) | Value of name tags of public subnets |
-| <a name="output_secure_db_subnet"></a> [secure\_db\_subnet](#output\_secure\_db\_subnet) | Value of name tags of secure db subnets |
-| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The id of the created vpc |
+| <a name="output_terraform_agent_instance_id"></a> [terraform\_agent\_instance\_id](#output\_terraform\_agent\_instance\_id) | terraform instance id |
 <!-- END_TF_DOCS -->
 
 ## Authors
