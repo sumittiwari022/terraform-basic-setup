@@ -4,9 +4,9 @@
 [![LICENSE](https://img.shields.io/github/license/tothenew/terraform-aws-template)](https://github.com/tothenew/terraform-aws-template/blob/master/LICENSE)
 # This terraform script creates:
 1. VPC
-2. 3 Public Subnet
-3. 3 Private Subnet
-4. 3 secure/db Subnets
+2. Public Subnets
+3. Private Subnet
+4. Secure/DB Subnets
 5. EC2 server with Docker engine and make package installed,IAM policy with SSM and Administrator permissions
 6. Default IAM policies required for Terraform provisioning.
 
