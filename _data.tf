@@ -1,4 +1,7 @@
 data "aws_vpc" "selected" {
+  depends_on = [
+   module.network
+ ]
   filter {
     name   = "tag:Name"
     values = [var.vpc_name]
