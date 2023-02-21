@@ -4,3 +4,8 @@ output "terraform_agent_instance_id"{
  description = "terraform instance id"
 }
 
+output "admin_role_arn" {
+ value = module.iam_roles.iam_role_admin_arn 
+ description = "admin role arn"
+}
+
