@@ -36,7 +36,7 @@ terraform apply
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_ec2-jenkins"></a> [ec2-jenkins](#module\_ec2-jenkins) | git::https://github.com/tothenew/terraform-aws-jenkins.git | v0.0.1 |
-| <a name="module_iam_roles"></a> [iam\_roles](#module\_iam\_roles) | git::https://github.com/tothenew/terraform-aws-identity.git | v0.1.0 |
+| <a name="module_iam_roles"></a> [iam\_roles](#module\_iam\_roles) | git::https://github.com/tothenew/terraform-aws-identity.git | v0.1.1 |
 | <a name="module_network"></a> [network](#module\_network) | git::https://github.com/tothenew/terraform-aws-vpc.git | v0.2.0 |
 | <a name="module_terraform_ec2_agent"></a> [terraform\_ec2\_agent](#module\_terraform\_ec2\_agent) | git::https://github.com/tothenew/terraform-aws-agent.git | v0.1.0 |
 
@@ -60,7 +60,7 @@ terraform apply
 
 | Name | Description |
 |------|-------------|
-| <a name="output_admin_role_arn"></a> [admin\_role\_arn](#output\_admin\_role\_arn) | admin role arn |
+| <a name="output_Infra_Deploy_Role"></a> [Infra\_Deploy\_Role](#output\_Infra\_Deploy\_Role) | admin role arn |
 | <a name="output_terraform_agent_instance_id"></a> [terraform\_agent\_instance\_id](#output\_terraform\_agent\_instance\_id) | terraform instance id |
 <!-- END_TF_DOCS -->
 
