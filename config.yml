@@ -1,0 +1,10 @@
+common:
+  vpn_cidr: "10.1.0.0/16"
+
+workspaces:
+  nonprod-eu-central-1-default:
+    aws:
+      account_id: 123456789
+      region: eu-central-1
+    account_name: nonprod
+    project_name: tothenew

@@ -7,7 +7,6 @@ module "terraform_ec2_agent" {
   vpc_id              = data.aws_vpc.selected.id
   subnet_id           = data.aws_subnets.public.ids[0]
   iam_instance_profile = module.iam_roles.iam_instance_profile_terraform_tf_agent_name
-  project_name_prefix = var.prj_prefix
-
+  project_name_prefix = "{local.workspace.account_name}-${local.workspace.aws.region}-${local.workspace.project_name}"
 }
 
