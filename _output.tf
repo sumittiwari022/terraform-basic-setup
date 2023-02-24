@@ -9,3 +9,7 @@ output "Infra_Deploy_Role" {
  description = "admin role arn"
 }
 
+output "S3_bucket_name" {
+ value = aws_s3_bucket.s3_backend.id
+ description = "s3 bucket name "
+}
