@@ -1,4 +1,4 @@
-output "module.ec2-jenkins_id"{
+output "ec2-jenkins_id"{
  value = module.terraform_ec2_agent.id
  description = "terraform instance id"
 }
